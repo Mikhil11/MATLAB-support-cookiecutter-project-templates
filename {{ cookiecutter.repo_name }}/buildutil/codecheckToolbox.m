@@ -3,9 +3,6 @@ function codecheckToolbox(rootDir)
         rootDir (1,1) string  = pwd();
     end
 
-    toolboxFileInfo = dir(fullfile(rootDir,"climatedatastoreToolbox","**","*.m*"));
-    filesToCheck = fullfile(string({toolboxFileInfo.folder}'),string({toolboxFileInfo.name}'));
-    
     testFileInfo = dir(fullfile(rootDir,"test","*.m"));
     filesToCheck = [filesToCheck;fullfile(string({testFileInfo.folder}'),string({testFileInfo.name}'))];
 
@@ -13,7 +10,7 @@ function codecheckToolbox(rootDir)
     filesToCheck = [filesToCheck;fullfile(string({testFileInfo.folder}'),string({testFileInfo.name}'))];
     
     if isempty(filesToCheck)
-        error("climatedatastore:codeissues","No files to check.")
+        error("%d:codeissues",{{ cookiecutter.repo_name }},"No files to check.")
     end
     issues = checkcode(filesToCheck);
     issues = [issues{:}];
@@ -34,7 +31,7 @@ function codecheckToolbox(rootDir)
     
     if issueCount ~= 0
         checkcode(filesToCheck)
-        error("climatedatastore:codeissues","Climate Data Toolbox requires all code check issues be resolved.")
+        error("%d:codeissues",{{ cookiecutter.repo_name }},"%d Toolbox requires all code check issues be resolved.",{{ cookiecutter.repo_name }})
     end
 end
 
