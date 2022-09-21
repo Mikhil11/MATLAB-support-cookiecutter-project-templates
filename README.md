@@ -3,7 +3,7 @@
 [Cookiecutter][1] template for creating a [MATLAB Toolbox Template][2]
 
 * Github repository: https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template
-* Free software: [License][3]
+* Software usage: [License][3]
 
 ## Quickstart
 
@@ -12,8 +12,8 @@ Generate a Toolbox template:
     cookiecutter https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template
 
 Then:
-* Create a repository and put it there
-* Modify your template to perform the desired actions
+* Create a repository and add the template files in the repo
+* Add the core functionality files in the folder code
 * Tag a release for your Toolbox (`git tag`)
 * Generate mltbx file for your repository using the [ToolBox Package][5]
 * Import your plugin from within MATLAB using the [MATLAB add-on installation][4]
