@@ -1,15 +1,15 @@
 # MATLAB Plugin Cookiecutter
 
-[Cookiecutter][1] template for creating a [MATLAB Plugin][2]
+[Cookiecutter][1] template for creating a [MATLAB Toolbox Template][2]
 
-* Github repository: https://github.com/suever/matlab-plugin-cookiecutter
-* Free software: [MIT license][3]
+* Github repository: https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template
+* Free software: [License][3]
 
 ## Quickstart
 
 Generate a plugin template:
 
-    cookiecutter https://github.com/suever/matlab-plugin-cookiecutter.git
+    cookiecutter https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template
 
 Then:
 * Create a repository and put it there
@@ -17,6 +17,6 @@ Then:
 * Tag a release for your plugin (`git tag`)
 * Import your plugin from within MATLAB using the `plugin.PluginManager`
 
-[1]: https://github.com/audreyr/cookiecutter
-[2]: https://github.com/suever/matlab-plugins
-[3]: https://github.com/suever/matlab-plugin-cookiecutter/blob/master/LICENSE
+[1]: https://github.com/cookiecutter/cookiecutter
+[2]: https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template
+[3]: https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template/blob/main/License.txt
