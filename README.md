@@ -11,6 +11,7 @@ Generate a local Toolbox template repository using command line:
 
 ```bash
 $ cookiecutter https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template
+```
 
 Then:
 * Edit the file in the local repository based on requirements
