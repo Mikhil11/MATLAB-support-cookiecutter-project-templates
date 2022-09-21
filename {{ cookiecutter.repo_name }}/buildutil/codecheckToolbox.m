@@ -5,9 +5,6 @@ function codecheckToolbox(rootDir)
 
     testFileInfo = dir(fullfile(rootDir,"test","*.m"));
     filesToCheck = [filesToCheck;fullfile(string({testFileInfo.folder}'),string({testFileInfo.name}'))];
-
-    testFileInfo = dir(fullfile(rootDir,"buildutil","*.m"));
-    filesToCheck = [filesToCheck;fullfile(string({testFileInfo.folder}'),string({testFileInfo.name}'))];
     
     if isempty(filesToCheck)
         error("%d:codeissues",{{ cookiecutter.repo_name }},"No files to check.")
