@@ -15,10 +15,11 @@ Then:
 * Create a repository and put it there
 * Modify your template to perform the desired actions
 * Tag a release for your Toolbox (`git tag`)
-* Generate mltbx file for your repository using the 
+* Generate mltbx file for your repository using the [ToolBox Package][5]
 * Import your plugin from within MATLAB using the [MATLAB add-on installation][4]
 
 [1]: https://github.com/cookiecutter/cookiecutter
 [2]: https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template
 [3]: https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template/blob/main/License.txt
 [4]: https://in.mathworks.com/help/matlab/ref/matlab.addons.install.html
+[5]: https://in.mathworks.com/help/matlab/matlab_prog/create-and-share-custom-matlab-toolboxes.html
