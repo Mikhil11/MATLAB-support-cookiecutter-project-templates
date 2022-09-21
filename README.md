@@ -7,12 +7,12 @@
 
 ## Quickstart
 
-Generate a Toolbox template:
+Generate a local Toolbox template repository using command line:
 
-    cookiecutter https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template
+$ cookiecutter https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template
 
 Then:
-* Create a repository and add the template files in the repo
+* Edit the file in the local repository based on requirements
 * Add the core functionality files in the folder code
 * Tag a release for your Toolbox (`git tag`)
 * Generate mltbx file for your repository using the [ToolBox Package][5]
