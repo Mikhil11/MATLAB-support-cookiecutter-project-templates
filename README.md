@@ -13,8 +13,9 @@ Generate a Toolbox template:
 
 Then:
 * Create a repository and put it there
-* Modify your plugin to perform the desired actions
-* Tag a release for your plugin (`git tag`)
+* Modify your template to perform the desired actions
+* Tag a release for your Toolbox (`git tag`)
+* Generate mltbx file for your repository using the 
 * Import your plugin from within MATLAB using the [MATLAB add-on installation][4]
 
 [1]: https://github.com/cookiecutter/cookiecutter
