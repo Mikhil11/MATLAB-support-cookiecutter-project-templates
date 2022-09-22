@@ -5,7 +5,7 @@
 * Github repository: https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template
 * Software usage: [License][3]
 
-## Quickstart
+## Getting Started
 
 Generate a MATLAB Toolbox template local repository using command line:
 
