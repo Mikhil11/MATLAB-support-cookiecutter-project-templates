@@ -1,25 +1,131 @@
-# Contributing
+.. highlight:: shell
 
->_If you believe you have discovered a security vulnerability, please **do not** open an issue or make a pull request.  Follow the instructions in the [SECURITY.MD](SECURITY.MD) file in this repository._
+============
+Contributing
+============
 
-Thank you for your interest in contributing to a MathWorks repository!  We encourage contributions large and small to this repository.  
+Contributions are welcome, and they are greatly appreciated! Every little bit
+helps, and credit will always be given.
 
-**Contributions do not have to be code!** If you see a way to explain things more clearly or a great example of how to use something, please contribute it (or a link to your content).  We welcome issues even if you don't code the solution.  We also welcome pull requests to resolve issues that we haven't gotten to yet!
+You can contribute in many ways:
 
-## How to contribute
+Types of Contributions
+----------------------
 
-* **Open an issue:** Start by [creating an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue) in the repository that you're interested in.  That will start a conversation with the maintainer.  When you are creating a bug report, please include as many details as possible.  Please remember that other people do not have your background or understanding of the issue; make sure you are clear and complete in your description.
-* **Work in your own public fork:** If you choose to make a contribution, you should [fork the repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo).  This creates an editable copy on GitHub where you can write, test, and refine your changes.  We suggest that you keep your changes small and focused on the issue you submitted.
-* **Sign a Contributor License Agreement (CLA):** We require that all outside contributors sign a [CLA](https://en.wikipedia.org/wiki/Contributor_License_Agreement) before we can accept your contribution.  When you create a pull request (see below), we'll reach out to you if you do not already have one on file.  Essentially, the CLA gives us permission to publish your contribution as part of the repository.
-* **Make a pull request:** "[Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)" is a confusing term, but it means exactly what it says:  You're requesting that the maintainers of the repository pull your changes in.  If you don't have a CLA on file, we'll reach out to you.  Your contribution will be reviewed, and we may ask you to revise your pull request based on our feedback.  Once everyone is satisfied, we'll merge your pull request into the repository.
+Report Bugs
+~~~~~~~~~~~
 
-## Guidelines
+Report bugs at https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/issues.
 
-We don't have best practices for writing MATLAB&reg; code, but we do have some recommendations:
+If you are reporting a bug, please include:
 
-* You should not have any warnings or errors in the [code analyzer report](http://www.mathworks.com/help/matlab/matlab_prog/matlab-code-analyzer-report.html)
-* [Loren Shure's blog](https://blogs.mathworks.com/loren) has [great advice on improving your MATLAB code](https://blogs.mathworks.com/loren/category/best-practice/)
-* Examples should be written as [live scripts](https://www.mathworks.com/help/matlab/matlab_prog/what-is-a-live-script-or-function.html) and then [exported as HTML](https://www.mathworks.com/help/matlab/matlab_prog/share-live-scripts.html).
-* We adhere to the [CommonMark](https://commonmark.org/) specification where it does not conflict with GitHub rendering.  If you edit your Markdown in Visual Studio Code or a similar editor, it uses [markdownlint](https://github.com/DavidAnson/markdownlint) to highlight issues in your Markdown.
+* Your operating system name and version.
+* Any details about your local setup that might be helpful in troubleshooting.
+* Detailed steps to reproduce the bug.
 
-**Again, thanks for contributing, and we look forward to your issues and pull requests!**
+Fix Bugs
+~~~~~~~~
+
+Look through the GitHub issues for bugs. Anything tagged with "bug" and "help
+wanted" is open to whoever wants to implement it.
+
+Implement Features
+~~~~~~~~~~~~~~~~~~
+
+Look through the GitHub issues for features. Anything tagged with "enhancement"
+and "help wanted" is open to whoever wants to implement it.
+
+Write Documentation
+~~~~~~~~~~~~~~~~~~~
+
+{{ cookiecutter.project_name }} could always use more documentation, whether as part of the
+official {{ cookiecutter.project_name }} docs, in docstrings, or even on the web in blog posts,
+articles, and such.
+
+Submit Feedback
+~~~~~~~~~~~~~~~
+
+The best way to send feedback is to file an issue at https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/issues.
+
+If you are proposing a feature:
+
+* Explain in detail how it would work.
+* Keep the scope as narrow as possible, to make it easier to implement.
+* Remember that this is a volunteer-driven project, and that contributions
+  are welcome :)
+
+Get Started!
+------------
+
+Ready to contribute? Here's how to set up `{{ cookiecutter.project_slug }}` for local development.
+
+1. Fork the `{{ cookiecutter.project_slug }}` repo on GitHub.
+2. Clone your fork locally::
+
+    $ git clone git@github.com:your_name_here/{{ cookiecutter.project_slug }}.git
+
+3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
+
+    $ mkvirtualenv {{ cookiecutter.project_slug }}
+    $ cd {{ cookiecutter.project_slug }}/
+    $ python setup.py develop
+
+4. Create a branch for local development::
+
+    $ git checkout -b name-of-your-bugfix-or-feature
+
+   Now you can make your changes locally.
+
+5. When you're done making changes, check that your changes pass flake8 and the
+   tests, including testing other Python versions with tox::
+
+    $ flake8 {{ cookiecutter.project_slug }} tests
+    $ python setup.py test or pytest
+    $ tox
+
+   To get flake8 and tox, just pip install them into your virtualenv.
+
+6. Commit your changes and push your branch to GitHub::
+
+    $ git add .
+    $ git commit -m "Your detailed description of your changes."
+    $ git push origin name-of-your-bugfix-or-feature
+
+7. Submit a pull request through the GitHub website.
+
+Pull Request Guidelines
+-----------------------
+
+Before you submit a pull request, check that it meets these guidelines:
+
+1. The pull request should include tests.
+2. If the pull request adds functionality, the docs should be updated. Put
+   your new functionality into a function with a docstring, and add the
+   feature to the list in README.rst.
+3. The pull request should work for Python 3.5, 3.6, 3.7 and 3.8, and for PyPy. Check
+   https://travis-ci.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/pull_requests
+   and make sure that the tests pass for all supported Python versions.
+
+Tips
+----
+
+To run a subset of tests::
+
+{% if cookiecutter.use_pytest == 'y' -%}
+    $ pytest tests.test_{{ cookiecutter.project_slug }}
+{% else %}
+    $ python -m unittest tests.test_{{ cookiecutter.project_slug }}
+{%- endif %}
+
+Deploying
+---------
+
+A reminder for the maintainers on how to deploy.
+Make sure all your changes are committed (including an entry in HISTORY.rst).
+Then run::
+
+$ bump2version patch # possible: major / minor / patch
+$ git push
+$ git push --tags
+
+Travis will then deploy to PyPI if tests pass.
