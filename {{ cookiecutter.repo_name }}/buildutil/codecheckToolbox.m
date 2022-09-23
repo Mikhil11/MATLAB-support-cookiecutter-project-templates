@@ -4,13 +4,13 @@ function codecheckToolbox(rootDir)
     end
 
     testFileInfo = dir(fullfile(rootDir,"test","*.m"));
-    filesToCheck = [filesToCheck;fullfile(string({testFileInfo.folder}'),string({testFileInfo.name}'))];
+    filesToCheck = fullfile(string({testFileInfo.folder}'),string({testFileInfo.name}'));
     
     testFileInfo = dir(fullfile(rootDir,"code","*.m"));
     filesToCheck = [filesToCheck;fullfile(string({testFileInfo.folder}'),string({testFileInfo.name}'))];
     
     if isempty(filesToCheck)
-        error("%d:codeissues",{{ cookiecutter.repo_name }},"No files to check.")
+        error("%d:codeissues",string({{ cookiecutter.repo_name }}),"No files to check.")
     end
     issues = checkcode(filesToCheck);
     issues = [issues{:}];
@@ -31,7 +31,6 @@ function codecheckToolbox(rootDir)
     
     if issueCount ~= 0
         checkcode(filesToCheck)
-        error("%d:codeissues",{{ cookiecutter.repo_name }},"%d Toolbox requires all code check issues be resolved.",{{ cookiecutter.repo_name }})
+        error("%d:codeissues",string({{ cookiecutter.repo_name }}),"%d Toolbox requires all code check issues be resolved.",string({{ cookiecutter.repo_name }}))
     end
 end
-
