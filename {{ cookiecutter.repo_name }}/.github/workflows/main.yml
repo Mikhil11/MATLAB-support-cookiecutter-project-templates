@@ -10,6 +10,9 @@ on:
     paths-ignore:
       - 'README.MD'
       - '.github/workflows/**'
+      - 'LICENSE.txt'
+      - 'CONTRIBUTING.MD'
+      - 'AUTHORS.MD'
   pull_request:
     branches: [ "main" ]
 
