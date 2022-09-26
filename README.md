@@ -16,6 +16,11 @@ $ cookiecutter https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template
 Then:
 * Edit the file in the local repository based on requirements
 * Add the core functionality files in the folder code
+* Push the template to a new repository in your profile
+* This will trigger github workflow and generate 'test_parameters.txt' file in the test folder
+* Add input arguments and expected output to the 'test_parameters.txt' file and commit the changes
+* The repo will generate a unit test for your repo and print the results in the report folder
+* The new repo is now ready to use. Clone the repository in the local folder
 * Generate mltbx file for your repository using the [ToolBox Package][5]
 * Import your plugin from within MATLAB using the [MATLAB add-on installation][4]
 * Upload for updated local repository to GitHub
