@@ -14,7 +14,6 @@ $ cookiecutter https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template
 ```
 
 Then:
-* Edit the file in the local repository based on requirements
 * Add the core functionality files in the folder code
 * Push the template to a new repository in your profile
 * This will trigger github workflow and generate 'test_parameters.txt' file in the test folder
