@@ -9,7 +9,7 @@
 * Fork the `{{ cookiecutter.project_slug }}` repo on GitHub.
 * Clone your fork locally::
 
-    $ git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}).git
+    $ git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}.git
     
 * Generate mltbx file for your repository using the [ToolBox Package][5]
 * Import your plugin from within MATLAB using the [MATLAB add-on installation][4]
