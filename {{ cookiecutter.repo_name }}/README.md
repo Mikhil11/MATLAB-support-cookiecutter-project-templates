@@ -6,8 +6,7 @@
 * TODO
 
 ## Installation
-* Fork the `{{ cookiecutter.project_slug }}` repo on GitHub.
-* Clone your fork locally::
+* Clone `{{ cookiecutter.repo_name }}` to the local folder using the below command:
 
     $ git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}.git
     
