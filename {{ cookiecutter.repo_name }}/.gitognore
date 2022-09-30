@@ -1,0 +1,22 @@
+# Windows default autosave extension
+*.asv
+
+# OSX / *nix default autosave extension
+*.m~
+
+# Packaged app and toolbox files
+*.mlappinstall
+*.mltbx
+
+# Simulink code generation folders
+slprj/
+sccprj/
+
+# Simulink autosave extension
+*.autosave
+
+# Simulink cache files
+*.slxc
+
+#Report Files
+report/**
