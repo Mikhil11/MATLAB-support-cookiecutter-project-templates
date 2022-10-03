@@ -17,6 +17,3 @@ sccprj/
 
 # Simulink cache files
 *.slxc
-
-#Report Files
-report/**
