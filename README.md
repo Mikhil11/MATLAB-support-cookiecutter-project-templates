@@ -7,6 +7,10 @@
 
 ## Getting Started
 
+* Install python Latest version
+* Install Cookiecutter using pip command: pip install cookiecutter
+* Install Git Bash and Git CMD in your system and authorize login for GitHub CLI
+
 Generate a MATLAB Toolbox template local repository using command line:
 
 ```bash
