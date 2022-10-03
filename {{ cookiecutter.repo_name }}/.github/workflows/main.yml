@@ -11,7 +11,7 @@ on:
       - 'code/*.m'
     paths-ignore:
       - 'README.MD'
-      - 'test/*'
+      - 'tests/*'
       - '.github/workflows/**'
       - 'LICENSE.txt'
       - 'CONTRIBUTING.MD'
