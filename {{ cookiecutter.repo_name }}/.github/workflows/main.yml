@@ -41,6 +41,7 @@ jobs:
       # Check for MATLAB code issues in the project.
       - name: Check for MATLAB code issues
         uses: matlab-actions/run-command@v1
+        continue-on-error: true
         if: always()
         with:
           command: addpath("buildutil"),codecheckToolbox()
