@@ -6,8 +6,8 @@ name: {{ cookiecutter.repo_name }}
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches:
-      - 'code/*'
+    paths:
+      - 'code/*.m'
       - 'buildutil/*'
     paths-ignore:
       - 'README.MD'
