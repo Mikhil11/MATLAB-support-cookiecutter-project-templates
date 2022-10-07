@@ -3,7 +3,10 @@
 {{ cookiecutter.project_short_description }}
 
 ## Description
-* TODO
+* Explain in detail the features and capabilities of the toolbox for its users.Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with
+
+## Pre- requisite
+* This section contains all the requirements which should be fullfilled before installing the Toolbox
 
 ## Installation
 * Clone `{{ cookiecutter.repo_name }}` to the local folder using the below command:
@@ -12,6 +15,9 @@
     
 * Generate mltbx file for your repository using the [ToolBox Package][5]
 * Import your plugin from within MATLAB using the [MATLAB add-on installation][4]
+
+
+##Getting Started
 
 
 ## Acknowledgement
