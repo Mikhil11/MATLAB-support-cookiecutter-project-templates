@@ -2,7 +2,7 @@
 
 {{ cookiecutter.project_short_description }}
 
-## Features
+## Description
 * TODO
 
 ## Installation
@@ -14,7 +14,7 @@
 * Import your plugin from within MATLAB using the [MATLAB add-on installation][4]
 
 
-## Credits
+## Acknowledgement
 * This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [Mikhil11/cookiecutter-MATLAB-Toolbox-template](https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template)
 
 [4]: https://in.mathworks.com/help/matlab/ref/matlab.addons.install.html
