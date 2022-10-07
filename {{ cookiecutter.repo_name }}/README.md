@@ -17,7 +17,7 @@
 * Import your plugin from within MATLAB using the [MATLAB add-on installation][4]
 
 
-##Getting Started
+## Getting Started
 
 
 ## Acknowledgement
