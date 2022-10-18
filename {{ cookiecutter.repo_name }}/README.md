@@ -5,7 +5,7 @@
 ## Description
 * Explain in detail the features and capabilities of the toolbox for its users.Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with
 
-## Requirements
+## Prerequisites
 * This section contains all the requirements which should be fullfilled before installing the Toolbox
 
 ## Installation
