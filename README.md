@@ -29,7 +29,7 @@ Then:
 * Upload for updated local repository to GitHub
 * Tag a release for your Toolbox (`git tag`)
 
-[1]: https://github.com/cookiecutter/cookiecutter
+[1]: https://github.com/cookiecutter
 [2]: https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template
 [3]: https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template/blob/main/License.txt
 [4]: https://in.mathworks.com/help/matlab/ref/matlab.addons.install.html
