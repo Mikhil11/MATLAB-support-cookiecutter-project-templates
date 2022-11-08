@@ -1,8 +1,7 @@
-# MATLAB Toolbox Template
+# Organizing Community Toolbox Structure with MATLAB Project Template
 
 MATLAB Toolbox Template helps users generate their own MATLAB Toolboxes repository using a command line utility tool called [Cookiecutter][1]. The template folder structure and files which are generated as a part of this package is provided within this [directory][2]
 
-* Github repository: https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template
 * Software usage: [License][3]
 
 ## Prerequisites
@@ -15,7 +14,7 @@ MATLAB Toolbox Template helps users generate their own MATLAB Toolboxes reposito
 
 Generate a MATLAB Toolbox local repository using the following command in Git Bash:
 ```bash
-cookiecutter https://insidelabs-git.mathworks.com/mikhils/matlab-toolbox-template
+cookiecutter https://insidelabs-git.mathworks.com/mikhils/community-toolbox-MATLAB-template
 ```
 
 * This will initiate an interactive setup in the command line. Make sure your answer github username and email details matches with your profile   details
@@ -30,8 +29,8 @@ cookiecutter https://insidelabs-git.mathworks.com/mikhils/matlab-toolbox-templat
 * Tag a release for your Toolbox (`git tag`)
 
 [1]: https://github.com/cookiecutter
-[2]: https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template/tree/main/%7B%7B%20cookiecutter.repo_name%20%7D%7D
-[3]: https://insidelabs-git.mathworks.com/mikhils/matlab-toolbox-template/-/blob/main/LICENSE
+[2]: https://insidelabs-git.mathworks.com/mikhils/community-toolbox-MATLAB-template/-/tree/main/%7B%7B%20cookiecutter.repo_name%20%7D%7D
+[3]: https://insidelabs-git.mathworks.com/mikhils/community-toolbox-MATLAB-template/-/blob/main/LICENSE
 [4]: https://in.mathworks.com/help/matlab/ref/matlab.addons.install.html
 [5]: https://in.mathworks.com/help/matlab/matlab_prog/create-and-share-custom-matlab-toolboxes.html
 [6]: https://git-scm.com/downloads
