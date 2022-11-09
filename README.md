@@ -1,6 +1,6 @@
 # Organizing Community Toolbox Structure with MATLAB Project Template
 
-MATLAB Toolbox Template helps users generate their own MATLAB Toolboxes repository using a command line utility tool called [Cookiecutter][1]. The template folder structure and files which are generated as a part of this package is provided within this [directory][2]
+MATLAB Toolbox Template helps users generate their own MATLAB Toolboxes repository using a command line utility tool called [Cookiecutter][1]. The template folder structure and files which are generated as a part of this package is provided within the directory '{{cookiecutter.repo_name}}'
 
 * Software usage: [License][3]
 
@@ -8,16 +8,21 @@ MATLAB Toolbox Template helps users generate their own MATLAB Toolboxes reposito
 
 * Install [python][8] Latest version
 * Install [Cookiecutter][9] using command: pip install cookiecutter
-* Install [Git Bash][6] and [Git CMD][6] in your system and authorize login for [GitHub CLI][7]
+* Install [Git Bash][6] and [Git CMD][6] in your system
+* Verify Git Bash installation using command line: 'git version'
+* Verify GitHub CLI installation using command line: 'gh version'
+* Authorize login for [GitHub CLI][7]
+
+![figure_0.png](img/auth_login1.png)
 
 ## Getting Started
 
 Generate a MATLAB Toolbox local repository using the following command in Git Bash:
 ```bash
-cookiecutter https://insidelabs-git.mathworks.com/mikhils/community-toolbox-MATLAB-template
+cookiecutter https://github.com/mathworks/community-toolbox-MATLAB-template
 ```
 
-* This will initiate an interactive setup in the command line. Make sure your answer github username and email details matches with your profile   details
+* This will initiate an interactive setup in the Git Bash. Make sure the answer about github username and email matches with GitHub user's profile  details
 * After creation of local repository, run the file Git_commands.bat using CMD. This will push the local repository to the user's GitHub profile.
 * Add the core functionality files in the folder 'code'
 * This will trigger github workflow and generate 'test_parameters.txt' file in the test folder
@@ -28,7 +33,7 @@ cookiecutter https://insidelabs-git.mathworks.com/mikhils/community-toolbox-MATL
 * Import your plugin from within MATLAB using the [MATLAB add-on installation][4]
 * Tag a release for your Toolbox (`git tag`)
 
-[1]: https://github.com/cookiecutter
+[1]: https://github.com/cookiecutter/cookiecutter
 [2]: https://insidelabs-git.mathworks.com/mikhils/community-toolbox-MATLAB-template/-/tree/main/%7B%7B%20cookiecutter.repo_name%20%7D%7D
 [3]: https://insidelabs-git.mathworks.com/mikhils/community-toolbox-MATLAB-template/-/blob/main/LICENSE
 [4]: https://in.mathworks.com/help/matlab/ref/matlab.addons.install.html
@@ -37,3 +42,5 @@ cookiecutter https://insidelabs-git.mathworks.com/mikhils/community-toolbox-MATL
 [7]: https://cli.github.com/manual/gh_auth_login
 [8]: https://www.python.org/downloads/
 [9]: https://pypi.org/project/cookiecutter/
+
+_Copyright 2022 The MathWorks, Inc._
