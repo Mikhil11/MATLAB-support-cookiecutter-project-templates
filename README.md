@@ -32,7 +32,7 @@ This project will follow [`README DRIVEN DEVELOPMENT`](https://tom.preston-werne
 
 * Generate a MATLAB Toolbox local repository using the following command in Git Bash: 
 
-    `cookiecutter https://github.com/mathworks/MATLAB-Support-for-Cookiecutter-Project-Templates` 
+    `cookiecutter https://github.com/Mikhil11/community-toolbox-MATLAB-template` 
 
 * This will initiate an interactive setup in the Git Bash. Make sure the answer about github username and email matches with GitHub user's profile  details
 ![figure_1.png](img/profile_details.png) 
