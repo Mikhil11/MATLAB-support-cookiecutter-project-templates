@@ -1,0 +1,11 @@
+{
+  "full_name": "Mikhil Shetty",
+  "email": "mikhils@mathworks.com",
+  "github_username": "Mikhil11",
+  "type_of_work":["project","toolbox"],
+  "repo_name": "MATLAB Template",
+  "project_slug": "{{ cookiecutter.repo_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "project_short_description": "This project helps open source community to develop their own toolboxes using MATLAB environment",
+  "version": "0.1.0",
+  "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
+}
