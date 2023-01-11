@@ -1,5 +1,7 @@
 # {{ cookiecutter.project_slug }}
 
+[![View <File Exchange Title> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/####-file-exchange-title) 
+
 {{ cookiecutter.project_short_description }}
 
 ## Description
