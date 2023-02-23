@@ -14,13 +14,9 @@ This project will follow [`README DRIVEN DEVELOPMENT`](https://tom.preston-werne
 
 * Install [Cookiecutter][9] using command: pip install cookiecutter 
 
-* Install [Git Bash][6] and [GitHub CLI][10] in your system 
+* Install [Git Bash][6] in your system 
 
 * Verify Git Bash installation using command line: 'git version' 
-
-* Verify GitHub CLI installation using command line: 'gh version' 
-
-* Authorize login for [GitHub CLI][7] 
 
   
 
