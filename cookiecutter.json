@@ -3,8 +3,9 @@
   "email": "UserEmailID",
   "github_username": "GitUserName",
   "type_of_work":["project","toolbox"],
+  "rootFolderName": "matlabtemplate"
   "repo_name": "MATLABTemplate",
-  "project_slug": "{{ cookiecutter.repo_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "project_slug": "{{ cookiecutter.rootFolderName.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "This project helps open source community to develop their own toolboxes using MATLAB environment",
   "version": "0.0.1",
   "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
