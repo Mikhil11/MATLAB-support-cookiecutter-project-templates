@@ -1,8 +1,12 @@
 {
-    "package": "{{ cookiecutter.repo_name }}",
-    "version": "{{ cookiecutter.version }}",
-    "description": "{{ cookiecutter.project_short_description }}",
-    "author": "{{ cookiecutter.full_name }}",
-    "email": "{{ cookiecutter.email }}",
-    "url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}"
+  "full_name": "{{ cookiecutter.full_name }}",
+  "email": "{{ cookiecutter.email }}",
+  "github_username": "{{ cookiecutter.github_username }}",
+  "type_of_work":"{{ cookiecutter.type_of_work }}",
+  "rootFolderName": "{{ cookiecutter.rootFolderName }}",
+  "repo_name": "{{ cookiecutter.repo_name }}",
+  "project_slug": "{{ cookiecutter.project_slug }}",
+  "project_short_description": "{{ cookiecutter.project_short_description }}",
+  "version": "{{ cookiecutter.version }}",
+  "open_source_license": "{{ cookiecutter.open_source_license }}"
 }
