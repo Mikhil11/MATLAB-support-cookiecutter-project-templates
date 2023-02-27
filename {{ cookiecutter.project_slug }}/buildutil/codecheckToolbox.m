@@ -16,7 +16,7 @@ function codecheckToolbox(rootDir)
     filesToCheck = [filesToCheck;fullfile(string({testFileInfo.folder}'),string({testFileInfo.name}'))];
     
     if isempty(filesToCheck)
-        error("%s:codeissues",string("{{cookiecutter.repo_name}}"),"No files to check.")
+        error("%s:codeissues",string("{{cookiecutter.rootFolderName}}"),"No files to check.")
     else
         issues = checkcode(filesToCheck);
         issues = [issues{:}];
@@ -34,7 +34,7 @@ function codecheckToolbox(rootDir)
         writeBadgeJSONFile("code issues",string(issueCount), color)
         if issueCount ~= 0
             checkcode(filesToCheck)
-            error("%s:codeissues",string("{{cookiecutter.repo_name}}"),"%s Toolbox requires all code check issues be resolved.",string("{{cookiecutter.repo_name}}"))
+            error("%s:codeissues",string("{{cookiecutter.rootFolderName}}"),"%s Toolbox requires all code check issues be resolved.",string("{{cookiecutter.rootFolderName}}"))
         end
     end
 end
