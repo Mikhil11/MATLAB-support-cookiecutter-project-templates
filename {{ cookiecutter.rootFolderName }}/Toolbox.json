@@ -1,0 +1,11 @@
+{
+  "userFullName": "{{ cookiecutter.userFullName }}",
+  "userEmail": "{{ cookiecutter.userEmail }}",
+  "githubUserName": "{{ cookiecutter.githubUserName }}",
+  "taskType":"{{ cookiecutter.taskType }}",
+  "rootFolderName": "{{ cookiecutter.rootFolderName }}",
+  "repositoryName": "{{ cookiecutter.repositoryName }}",
+  "projectDescription": "{{ cookiecutter.projectDescription }}",
+  "toolboxVersion": "{{ cookiecutter.toolboxVersion }}",
+  "licenseType": "{{ cookiecutter.licenseType }}"
+}
