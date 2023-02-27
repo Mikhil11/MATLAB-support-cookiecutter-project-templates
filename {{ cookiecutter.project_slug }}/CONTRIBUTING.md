@@ -1,4 +1,3 @@
-
 Contributing
 ============
 
@@ -13,7 +12,7 @@ Types of Contributions
 Report Bugs
 -----------
 
-Report bugs at https://github.com/{{ cookiecutter.githubUserName }}/{{ cookiecutter.project_slug }}/issues.
+Report bugs at https://github.com/{{ cookiecutter.githubUserName }}/{{ cookiecutter.rootFolderName }}/issues.
 
 If you are reporting a bug, please include:
 
@@ -36,14 +35,14 @@ is open to whoever wants to implement it.
 Write Documentation
 -------------------
 
-{{ cookiecutter.project_slug }} could always use more documentation, whether as part of the
-official {{ cookiecutter.project_slug }} docs, in docstrings, or even on the web in blog posts,
+{{ cookiecutter.rootFolderName }} could always use more documentation, whether as part of the
+official {{ cookiecutter.rootFolderName }} docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 Submit Feedback
 ---------------
 
-The best way to send feedback is to file an issue at https://github.com/{{ cookiecutter.githubUserName }}/{{ cookiecutter.project_slug }}/issues.
+The best way to send feedback is to file an issue at https://github.com/{{ cookiecutter.githubUserName }}/{{ cookiecutter.rootFolderName }}/issues.
 
 If you are proposing a feature:
 
@@ -58,7 +57,7 @@ Push Request Guidelines
 Before you submit a push request, check that it meets these guidelines:
 
 1. The push request should include tests.
-2. If a push request is made in the code folder,the contribution programming style should match with the {{ cookiecutter.project_slug }}'s programming style 
+2. If a push request is made in the code folder,the contribution programming style should match with the {{ cookiecutter.rootFolderName }}'s programming style 
 3. If the push request adds functionality, the docs should be updated. Put your new functionality into a function with a docstring, and add the
    feature to the list in README.rst.
 
@@ -74,4 +73,3 @@ Deploying
 A reminder for the maintainers on how to deploy.
 Make sure all your changes are committed (including an entry in HISTORY.rst).
 Then run::
-
