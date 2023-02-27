@@ -3,7 +3,7 @@
   "email": "UserEmailID",
   "github_username": "GitUserName",
   "type_of_work":["project","toolbox"],
-  "rootFolderName": "matlabtemplate",
+  "rootFolderName": "MATLABTemplate",
   "repo_name": "MATLABTemplate",
   "project_slug": "{{ cookiecutter.rootFolderName.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "This project helps open source community to develop their own toolboxes using MATLAB environment",
