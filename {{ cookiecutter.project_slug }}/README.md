@@ -2,7 +2,7 @@
 
 [![View <File Exchange Title> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/####-file-exchange-title) 
 
-{{ cookiecutter.project_short_description }}
+{{ cookiecutter.projectDescription }}
 
 ## Description
 * Explain in detail the features and capabilities of the toolbox for its users.Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with
@@ -11,9 +11,9 @@
 * This section contains all the requirements which should be fullfilled before installing the Toolbox
 
 ## Installation
-* Clone `{{ cookiecutter.repo_name }}` to the local folder using the below command:
+* Clone `{{ cookiecutter.rootFolderName }}` to the local folder using the below command:
 
-    $ git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}.git
+    $ git clone https://github.com/{{ cookiecutter.githubUserName }}/{{ cookiecutter.project_slug }}.git
     
 * Generate mltbx file for your repository using the [ToolBox Package][5]
 * Import your plugin from within MATLAB using the [MATLAB add-on installation][4]
