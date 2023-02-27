@@ -1,4 +1,4 @@
-# {{ cookiecutter.project_slug }}
+# {{ cookiecutter.rootFolderName }}
 
 [![View <File Exchange Title> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/####-file-exchange-title) 
 
@@ -13,7 +13,7 @@
 ## Installation
 * Clone `{{ cookiecutter.rootFolderName }}` to the local folder using the below command:
 
-    $ git clone https://github.com/{{ cookiecutter.githubUserName }}/{{ cookiecutter.project_slug }}.git
+    $ git clone https://github.com/{{ cookiecutter.githubUserName }}/{{ cookiecutter.rootFolderName }}.git
     
 * Generate mltbx file for your repository using the [ToolBox Package][5]
 * Import your plugin from within MATLAB using the [MATLAB add-on installation][4]
