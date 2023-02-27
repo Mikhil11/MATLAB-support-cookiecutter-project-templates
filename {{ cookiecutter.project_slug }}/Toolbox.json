@@ -5,7 +5,6 @@
   "taskType":"{{ cookiecutter.taskType }}",
   "rootFolderName": "{{ cookiecutter.rootFolderName }}",
   "repositoryName": "{{ cookiecutter.repositoryName }}",
-  "project_slug": "{{ cookiecutter.project_slug }}",
   "projectDescription": "{{ cookiecutter.projectDescription }}",
   "toolboxVersion": "{{ cookiecutter.toolboxVersion }}",
   "licenseType": "{{ cookiecutter.licenseType }}"
