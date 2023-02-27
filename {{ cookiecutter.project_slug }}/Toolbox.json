@@ -1,12 +1,12 @@
 {
   "userFullName": "{{ cookiecutter.userFullName }}",
   "userEmail": "{{ cookiecutter.userEmail }}",
-  "GitHubUserName": "{{ cookiecutter.GitHubUserName }}",
+  "githubUserName": "{{ cookiecutter.githubUserName }}",
   "taskType":"{{ cookiecutter.taskType }}",
   "rootFolderName": "{{ cookiecutter.rootFolderName }}",
   "repositoryName": "{{ cookiecutter.repositoryName }}",
   "project_slug": "{{ cookiecutter.project_slug }}",
   "projectDescription": "{{ cookiecutter.projectDescription }}",
-  "ToolboxVersion": "{{ cookiecutter.ToolboxVersion }}",
+  "toolboxVersion": "{{ cookiecutter.toolboxVersion }}",
   "licenseType": "{{ cookiecutter.licenseType }}"
 }
