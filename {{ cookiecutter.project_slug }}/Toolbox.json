@@ -1,12 +1,12 @@
 {
-  "full_name": "{{ cookiecutter.full_name }}",
-  "email": "{{ cookiecutter.email }}",
-  "github_username": "{{ cookiecutter.github_username }}",
-  "type_of_work":"{{ cookiecutter.type_of_work }}",
+  "userFullName": "{{ cookiecutter.userFullName }}",
+  "userEmail": "{{ cookiecutter.userEmail }}",
+  "GitHubUserName": "{{ cookiecutter.GitHubUserName }}",
+  "taskType":"{{ cookiecutter.taskType }}",
   "rootFolderName": "{{ cookiecutter.rootFolderName }}",
-  "repo_name": "{{ cookiecutter.repo_name }}",
+  "repositoryName": "{{ cookiecutter.repositoryName }}",
   "project_slug": "{{ cookiecutter.project_slug }}",
-  "project_short_description": "{{ cookiecutter.project_short_description }}",
-  "version": "{{ cookiecutter.version }}",
-  "open_source_license": "{{ cookiecutter.open_source_license }}"
+  "projectDescription": "{{ cookiecutter.projectDescription }}",
+  "ToolboxVersion": "{{ cookiecutter.ToolboxVersion }}",
+  "licenseType": "{{ cookiecutter.licenseType }}"
 }
