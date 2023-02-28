@@ -2,7 +2,7 @@
 
 [![View <File Exchange Title> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/####-file-exchange-title) 
 
-MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes repository using a command line utility tool called [Cookiecutter][1]. The template folder structure and files which are generated as a part of this package is provided within the directory '{{cookiecutter.repo_name}}'
+MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes repository using a command line utility tool called [Cookiecutter][1]. The template folder structure and files which are generated as a part of this package is provided within the directory '{{cookiecutter.rootFolderName}}'
 
 This project will follow [`README DRIVEN DEVELOPMENT`](https://tom.preston-werner.com/2010/08/23/readme-driven-development.html) process and it will be executed in the open using Github environment.
 
