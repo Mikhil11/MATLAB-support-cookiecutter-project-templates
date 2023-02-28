@@ -16,13 +16,7 @@ This project will follow [`README DRIVEN DEVELOPMENT`](https://tom.preston-werne
 
 * Install [Git Bash][6] in your system 
 
-* Verify Git Bash installation using command line: 'git version' 
-
-  
-
-![figure_0.png](img/auth_login1.png) 
-
-  
+* Verify Git Bash installation using command line: 'git version'   
 
 ## Installation 
 
