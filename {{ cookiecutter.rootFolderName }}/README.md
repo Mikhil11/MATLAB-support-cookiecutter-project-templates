@@ -21,9 +21,5 @@
 
 ## Getting Started
 
-
-## Acknowledgement
-* This package was created with [Cookiecutter](https://github.com/cookiecutter) and the [Mikhil11/cookiecutter-MATLAB-Toolbox-template](https://github.com/Mikhil11/cookiecutter-MATLAB-Toolbox-template)
-
 [4]: https://in.mathworks.com/help/matlab/ref/matlab.addons.install.html
 [5]: https://in.mathworks.com/help/matlab/matlab_prog/create-and-share-custom-matlab-toolboxes.html
