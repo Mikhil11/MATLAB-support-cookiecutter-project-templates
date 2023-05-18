@@ -20,7 +20,7 @@ MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes rep
 
 * Generate a MATLAB Toolbox local repository using the following command in Git Bash: 
 
-    `cookiecutter https://github.com/Mikhil11/community-toolbox-MATLAB-template` 
+    `cookiecutter https://github.com/Mikhil11/MATLAB-support-cookiecutter-project-templates` 
 
 * This will initiate an interactive setup in the Git Bash. Make sure the answer about github username and email matches with GitHub user's profile  details
 ![figure_1.png](img/profile_details.png) 
