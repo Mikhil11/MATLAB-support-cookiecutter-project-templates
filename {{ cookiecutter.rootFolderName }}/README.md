@@ -1,7 +1,7 @@
-# {{ cookiecutter.rootFolderName }} 
+# {{ cookiecutter.repositoryName }} 
  
 
-{{ cookiecutter.project_short_description }} 
+{{ cookiecutter.projectDescription }} 
 
  
  
