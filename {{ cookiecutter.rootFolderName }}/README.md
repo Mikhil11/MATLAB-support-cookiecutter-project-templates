@@ -22,12 +22,12 @@
 
 ## Installation 
 
-* Clone `{{ cookiecutter.repo_name.replace(' ', '_').replace('-', '_') }}` to the local folder using the below command: 
+* Clone `{{ cookiecutter.rootFolderName }}` to the local folder using the below command: 
 
  
  
 
-    $ git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name.replace(' ', '_').replace('-', '_') }}.git 
+    $ git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.rootFolderName }}.git 
 
      
 
