@@ -27,7 +27,7 @@
  
  
 
-    $ git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.rootFolderName }}.git 
+    $ git clone https://github.com/{{ cookiecutter.githubUserName }}/{{ cookiecutter.rootFolderName }}.git 
 
      
 
