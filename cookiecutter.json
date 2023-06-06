@@ -2,7 +2,6 @@
   "userFullName": "UserFullName",
   "userEmail": "UserEmailID",
   "githubUserName": "GitUserName",
-  "taskType": "Toolbox",
   "rootFolderName": "MATLABTemplate",
   "repositoryName": "MATLABTemplate",
   "projectDescription": "This project helps open source community to develop their own toolboxes using MATLAB environment",
