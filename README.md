@@ -18,33 +18,10 @@ MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes rep
 
 ## Installation 
 
-* Generate a MATLAB Toolbox local repository using the following command in Git Bash: 
-
-    `cookiecutter https://github.com/Mikhil11/MATLAB-support-cookiecutter-project-templates` 
-
-* This will initiate an interactive setup in the Git Bash. Make sure the answer about github username and email matches with GitHub user's profile  details
-![figure_1.png](images/profile_details.png) 
-
-* After creation of local repository, run the file Git_commands.bat using CMD. This will push the local repository to the user's GitHub profile. 
-![figure_2.png](images/bat_file.png) 
 
 ## Getting Started 
 
-* The user should now be able to see a repository with all the template files as given below
 
-![figure_3.png](images/file_structure.png) 
-
-* Add the core functionality files in the folder 'code' 
-
-* This will trigger a series of GitHub workflows which will provide the users with ready to use MATLAB tools for generating various reports.
-
-* The new repo is now ready to use. Clone the repository in the local folder 
-
-* Generate mltbx file for your repository using the [ToolBox Package][5] 
-
-* Import your plugin from within MATLAB using the [MATLAB add-on installation][4] 
-
-* Tag a release for your Toolbox (`git tag`) 
 
 
  ## License 
@@ -58,7 +35,7 @@ The license is available in the [LICENSE.md][3] file within this repository
 
 [MATLAB Central](https://www.mathworks.com/matlabcentral) 
 
-Copyright 2022 The MathWorks, Inc. 
+Copyright 2023 The MathWorks, Inc. 
 
 
 [1]: https://github.com/cookiecutter/cookiecutter 
