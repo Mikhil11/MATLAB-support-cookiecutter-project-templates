@@ -1,54 +1,176 @@
 # {{ cookiecutter.repositoryName }} 
- 
 
-{{ cookiecutter.projectDescription }} 
-
- 
- 
-
-## Description 
-
-* Explain in detail the features and capabilities of the toolbox for its users.Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with 
+<!-- This is the "Title of the contribution" that was approved during the Community Contribution Review Process -->  
 
  
  
 
-## Prerequisites 
+[![View <File Exchange Title> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/####-file-exchange-title)   
 
-* This section contains all the requirements which should be fullfilled before installing the Toolbox 
+<!-- Add this icon to the README if this repo also appears on File Exchange via the "Connect to GitHub" feature -->  
+
+ 
+{{ cookiecutter.projectDescription }}
+
+<!--- If your project includes a visualation or any images or an App please include a screenshot in this README ---> 
 
  
  
 
-## Installation 
+If you mention any trademarks, all MathWorks&reg; (including MATLAB&reg;)  and 3rd party trademarks need to be correctly marked the first time they are prominently used in each file (including the README.MD).   
 
-* Clone `{{ cookiecutter.rootFolderName }}` to the local folder using the below command: 
+<!--- Markdown supports the following HTML entities: © - &copy;  ® - &reg;  ™ - &trade; 
 
- 
- 
-
-    $ git clone https://github.com/{{ cookiecutter.githubUserName }}/{{ cookiecutter.rootFolderName }}.git 
-
-     
-
-* Generate mltbx file for your repository using the [ToolBox Package][5] 
-
-* Import your plugin from within MATLAB using the [MATLAB add-on installation][4] 
-
- 
- 
- 
-
-## Getting Started 
-
-
-## Acknowledgement 
-
-* This package was created with [Cookiecutter](https://github.com/cookiecutter) and the [community-toolbox-MATLAB-template](https://github.com/mathworks/community-toolbox-MATLAB-template) 
+More information about Trademarks can be found internally within the Checklist for Community Contributions and Supportfiles Confluence page---> 
 
  
  
 
-[4]: https://in.mathworks.com/help/matlab/ref/matlab.addons.install.html 
+If your repository plans to accept contributions, you should include the `CONTRIBUTING.md` file from this repository.  If you **do not accept contributions**, don't copy the `CONTRIBUTING.md` file. 
 
-[5]: https://in.mathworks.com/help/matlab/matlab_prog/create-and-share-custom-matlab-toolboxes.html 
+ 
+ 
+
+Please remember to delete all template related text that you are not using within your README.md 
+
+ 
+ 
+
+<!--- Please remember to delete all template related text that you are not using within your README.md --->  
+
+ 
+ 
+
+## Setup  
+
+To Run: 
+
+1. Step 1 
+
+2. Step 2 
+
+ 
+ 
+
+Additional information about set up 
+
+ 
+ 
+
+### MathWorks Products (https://www.mathworks.com) 
+
+ 
+ 
+
+Requires MATLAB release R#### or newer 
+
+- [Product1](https://url-to-product1) 
+
+- [Product1](https://url-to-product1) 
+
+ 
+ 
+
+### 3rd Party Products: 
+
+3p: 
+
+- [Product1](https://url-to-product1) 
+
+- [Product2](https://url-to-product2) 
+
+ 
+ 
+
+## Installation (Optional) 
+
+Installation instuctions 
+
+ 
+ 
+
+Before proceeding, ensure that the below products are installed:   
+
+* [Product1](https://url-to-product1)  
+
+ 
+ 
+
+Please see the [documentation](Documentation/Installation.md) for detailed installation instructions.  
+
+<!--- Make sure you have a Installation.md document in the Documentation folder if you are to follow this formatting.  You can choose your own folder formatting if you prefer ---> 
+
+ 
+ 
+
+1. Step 1 
+
+2. Step 2 
+
+
+## Getting Started  
+
+Information about Getting Started 
+
+<!--- List or link to any relevent Documentation to help the user Get Started ---> 
+
+
+## License 
+
+<!--- Make sure you have a License.txt within your Repo ---> 
+
+LICENSE NAME © 2022 The MathWorks, Inc. 
+
+ 
+ 
+
+or 
+
+ 
+ 
+
+The license for <insert repo name> is available in the LICENSE.TXT file in this GitHub repository. 
+
+ 
+ 
+
+or 
+
+ 
+ 
+
+The license is available in the License file within this repository 
+
+ 
+ 
+
+Include any other License information here, including third-party content using separate license agreements  
+
+ 
+ 
+
+## Community Support 
+
+[MATLAB Central](https://www.mathworks.com/matlabcentral) 
+
+ 
+ 
+
+Copyright 2023 The MathWorks, Inc. 
+
+ 
+ 
+
+<!--- Do not forget to the add the SECURITY.md to this repo ---> 
+
+<!--- Add Topics #Topics to your Repo such as #MATLAB  ---> 
+
+ 
+ 
+
+<!--- This is my comment ---> 
+
+ 
+ 
+
+<!-- Include any Trademarks if this is the first time mentioning trademarked products (For Example:  MATLAB&reg; Simulink&reg; Trademark&trade; Simulink Test&#8482;) -->  
