@@ -1,9 +1,9 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
   <configuration target="target.toolbox" target-name="Package Toolbox">
-    <param.appname>FSDA</param.appname>
+    <param.appname>{{ cookiecutter.rootFoldername }}</param.appname>
     <param.guid>{{ uuid4() }}</param.guid>
     <param.version>0.0</param.version>
-    <param.output>${PROJECT_ROOT}/release/{{cookiecutter.rootFolderName }}Toolbox.mltbx</param.output>
+    <param.output>${PROJECT_ROOT}/release/{{cookiecutter.rootFolderName }}.mltbx</param.output>
     <fileset.rootdir>
       <file>${PROJECT_ROOT}/toolbox</file>
     </fileset.rootdir>
