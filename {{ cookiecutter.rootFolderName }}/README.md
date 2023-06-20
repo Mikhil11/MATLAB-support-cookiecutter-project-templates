@@ -110,31 +110,6 @@ Please see the [documentation](Documentation/Installation.md) for detailed insta
 
 ## Getting started with {{ cookiecutter.rootFoldername }} Toolbox
 
-{{ cookiecutter.projectDescription }}
-
-## Contents
-
-   \item{ \hyperref[H_2AB91459]{Requirements} }
-   \item{ \hyperref[H_4955CA13]{Installation} }
-   \item{ \hyperref[H_5AA36483]{How to use the Toolbox functions} }
-   \item{ \hyperref[H_72DFA1F3]{How to analyse and visualize the results (If any)} }
-
-## Requirements:
-
-   -  MATLAB 
-   \item{ {{ cookiecutter.rootFolderName }} Toolbox }
-
-## Installation:
-
-
-In order to install the toolbox please follow the below steps:
-
-
-
-   -  A compatible version of MATLAB for the toolbox 
-   -  Provide location of MLTBX or source file 
-   -  Install any third party software required for the Toolbox (if any) 
-
 ## How to use the toolbox functions:
 
 ```matlab:Code
