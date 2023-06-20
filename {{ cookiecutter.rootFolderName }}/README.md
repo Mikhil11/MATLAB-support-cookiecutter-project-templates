@@ -108,11 +108,51 @@ Please see the [documentation](Documentation/Installation.md) for detailed insta
 2. Step 2 
 
 
-## Getting Started  
+# Getting started with {{ cookiecutter.rootFoldername }} Toolbox
+# {{ cookiecutter.projectDescription }}
+## Contents
 
-Information about Getting Started 
+   \item{ \hyperref[H_2AB91459]{Requirements} }
+   \item{ \hyperref[H_4955CA13]{Installation} }
+   \item{ \hyperref[H_5AA36483]{How to use the Toolbox functions} }
+   \item{ \hyperref[H_72DFA1F3]{How to analyse and visualize the results (If any)} }
 
-<!--- List or link to any relevent Documentation to help the user Get Started ---> 
+## Requirements:
+
+   -  MATLAB 
+   \item{ {{ cookiecutter.rootFolderName }} Toolbox }
+
+## Installation:
+
+
+In order to install the toolbox please follow the below steps:
+
+
+
+   -  A compatible version of MATLAB for the toolbox 
+   -  Provide location of MLTBX or source file 
+   -  Install any third party software required for the Toolbox (if any) 
+
+## How to use the toolbox functions:
+
+```matlab:Code
+%% Provide descriotion about the toolbox function and provide an example for it
+x = 2;
+y = 3;
+a =  addVariable(x,y);
+disp(a)
+b = subtractVariable(x,y);
+disp(b)
+```
+
+## How to analyse and visualize the results (If any):
+
+```matlab:Code
+% Use MATLAB functions which user can  use to visualize data(if any)
+x = 0:pi/100:2*pi;
+y = sin(x);
+plot(x,y)
+```
 
 
 ## License 
