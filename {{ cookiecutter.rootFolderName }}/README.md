@@ -108,8 +108,10 @@ Please see the [documentation](Documentation/Installation.md) for detailed insta
 2. Step 2 
 
 
-# Getting started with {{ cookiecutter.rootFoldername }} Toolbox
-# {{ cookiecutter.projectDescription }}
+## Getting started with {{ cookiecutter.rootFoldername }} Toolbox
+
+{{ cookiecutter.projectDescription }}
+
 ## Contents
 
    \item{ \hyperref[H_2AB91459]{Requirements} }
