@@ -43,6 +43,14 @@ end
         mltbxFileName = strrep(opts.ToolboxName," ","_") + ".mltbx";
         opts.OutputFile = fullfile(releaseFolderName,mltbxFileName);
 
+        %opts.SupportedPlatforms.Win64 = true;
+        %opts.SupportedPlatforms.Maci64 = false;
+        %opts.SupportedPlatforms.Glnxa64 = true;
+        %opts.SupportedPlatforms.MatlabOnline = true;
+        %opts.MinimumMatlabRelease = "R2019b";
+        %opts.MaximumMatlabRelease = "";
+
+
         % Create the release directory, if needed
         if ~exist(releaseFolderName,"dir")
             mkdir(releaseFolderName)
