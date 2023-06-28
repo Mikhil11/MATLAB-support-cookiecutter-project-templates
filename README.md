@@ -8,7 +8,7 @@ MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes rep
 
   
 
-* Install MATLAB 2019b or newer versions
+* Install [MATLAB][2] 2019b or newer versions
 
 * Install [Python&trade;][8] Latest version 
 
@@ -42,7 +42,7 @@ Copyright 2023 The MathWorks, Inc.
 
 [1]: https://github.com/cookiecutter/cookiecutter 
 
-[2]: https://github.com/mathworks/MATLAB-Support-for-Cookiecutter-Project-Templates/tree/main/%7B%7B%20cookiecutter.repo_name%20%7D%7D 
+[2]: https://in.mathworks.com/help/install/install-products.html 
 
 [3]: https://github.com/mathworks/MATLAB-Support-for-Cookiecutter-Project-Templates/-/blob/main/LICENSE 
 
