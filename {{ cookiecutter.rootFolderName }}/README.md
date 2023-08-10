@@ -108,7 +108,7 @@ Please see the [documentation](Documentation/Installation.md) for detailed insta
 2. Step 2 
 
 
-## Getting started with {{ cookiecutter.rootFoldername }} Toolbox
+## Getting started with {{ cookiecutter.rootFolderName }} Toolbox
 
 ## How to use the toolbox functions:
 
@@ -136,7 +136,7 @@ plot(x,y)
 
 <!--- Make sure you have a License.txt within your Repo ---> 
 
-LICENSE NAME © 2022 The MathWorks, Inc. 
+LICENSE NAME © 2023 The MathWorks, Inc. 
 
  
  
