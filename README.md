@@ -14,9 +14,7 @@ MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes rep
 
 * Install [Cookiecutter][9] using command: pip install cookiecutter 
 
-* Install [Git Bash][6] in your system 
-
-* Verify Git Bash installation using command line: 'git version'   
+* Install [Git Bash][6] in your system  
 
 ## Installation 
 
