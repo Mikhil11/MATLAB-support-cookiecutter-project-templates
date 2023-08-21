@@ -27,8 +27,29 @@ MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes rep
   * Add folder templateToolbox to the MATLAB [path][10]
 
 
-## Getting Started 
+## Getting Started
+ * Create options object using generateProjectOptions function.
 
+```matlab
+  
+  options = generateProjectOptions();
+  %% OR %%
+  options = generateProjectOptions(GitRepositoryUrl);
+  
+```
+* The options object defines the interface which helps user to modify a given project template.
+
+```matlab
+  options = 
+  
+    generateProjectOptions with properties:
+  
+          outputPath: 'C:\Users\mikhils\OneDrive - MathWorks\Desktop\Files\testrepo'
+      templateFields: [1×1 struct]
+            addTests: 0
+            repoPath: "https://github.com/Mikhil11/MATLAB-support-cookiecutter-project-templates"
+            isFolder: 0
+```
 
 
 
