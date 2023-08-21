@@ -17,7 +17,12 @@ MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes rep
 * Install [Git Bash][6] in your system  
 
 ## Installation 
+### Via Add-on Explorer
+  * Launch MATLAB and download Project Template tool from Add-On Explorer in MATLAB&reg;
 
+### Alternate method: Download Repository
+  * Generate a MATLAB Toolbox local repository using the following command in Git Bash:
+    `git clone https://github.com/mathworks/MATLAB-support-cookiecutter-project-templates.git`
 
 ## Getting Started 
 
