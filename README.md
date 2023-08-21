@@ -4,9 +4,7 @@
 
 MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes repository using a command line utility tool called [Cookiecutter][1]. The template folder structure and files which are generated as a part of this package is provided within the directory '{{cookiecutter.rootFolderName}}'
 
-## Setup 
-
-  
+## Setup  
 
 * Install [MATLAB][2] 2019b or newer versions
 
@@ -21,8 +19,13 @@ MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes rep
   * Launch MATLAB and download Project Template tool from Add-On Explorer in MATLAB&reg;
 
 ### Alternate method: Download Repository
-  * Generate a MATLAB Toolbox local repository using the following command in Git Bash:
+  * Download the repository using the folllowing git command:
+
     `git clone https://github.com/mathworks/MATLAB-support-cookiecutter-project-templates.git`
+  
+  * Open the root folder of the repository in MATLAB.
+  * Add folder templateToolbox to the MATLAB [path][10]
+
 
 ## Getting Started 
 
@@ -55,10 +58,8 @@ Copyright 2023 The MathWorks, Inc.
 
 [6]: https://git-scm.com/downloads 
 
-[7]: https://cli.github.com/manual/gh_auth_login 
-
 [8]: https://www.python.org/downloads/ 
 
 [9]: https://pypi.org/project/cookiecutter/
 
-[10]: https://cli.github.com/
+[10]: https://in.mathworks.com/help/matlab/ref/addpath.html#btpdojo-1
