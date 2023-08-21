@@ -40,7 +40,7 @@ MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes rep
 * The options object defines the interface which helps user to modify a given project template.
 
 ```matlab
-  options = 
+>> options = 
   
     generateProjectOptions with properties:
   
@@ -54,7 +54,7 @@ MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes rep
 * The parameters required to define a project is declared in the fieldname 'templateFields' of options object.
 
 ```matlab
-  options.templateFields
+>> options.templateFields
 
   struct with fields:
 
