@@ -66,6 +66,7 @@ MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes rep
     projectDescription: 'This project helps open source community to develop their own toolboxes using MATLAB environment'
         toolboxVersion: '0.0.1'
            licenseType: ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
+
 ```
 
  ## License 
