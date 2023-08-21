@@ -40,32 +40,32 @@ MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes rep
 * The options object defines the interface which helps user to modify a given project template.
 
 ```matlab
->> options = 
-  
-    generateProjectOptions with properties:
-  
-          outputPath: 'projectFolderPath'
-      templateFields: [1×1 struct]
-            addTests: 0
-            repoPath: "https://github.com/mathworks/MATLAB-support-cookiecutter-project-templates"
-            isFolder: 0
+   >> options = 
+     
+       generateProjectOptions with properties:
+     
+             outputPath: 'projectFolderPath'
+         templateFields: [1×1 struct]
+               addTests: 0
+               repoPath: "https://github.com/mathworks/MATLAB-support-cookiecutter-project-templates"
+               isFolder: 0
 ```
 
 * The parameters required to define a project is declared in the fieldname 'templateFields' of options object.
 
 ```matlab
->> options.templateFields
-
-  struct with fields:
-
-          userFullName: 'UserFullName'
-             userEmail: 'UserEmailID'
-        githubUserName: 'GitUserName'
-        rootFolderName: 'MATLABTemplate'
-        repositoryName: 'MATLABTemplate'
-    projectDescription: 'This project helps open source community to develop their own toolboxes using MATLAB environment'
-        toolboxVersion: '0.0.1'
-           licenseType: ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
+   >> options.templateFields
+   
+     struct with fields:
+   
+             userFullName: 'UserFullName'
+                userEmail: 'UserEmailID'
+           githubUserName: 'GitUserName'
+           rootFolderName: 'MATLABTemplate'
+           repositoryName: 'MATLABTemplate'
+       projectDescription: 'This project helps open source community to develop their own toolboxes using MATLAB environment'
+           toolboxVersion: '0.0.1'
+              licenseType: ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
 
 ```
 
