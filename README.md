@@ -33,7 +33,7 @@ MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes rep
 ```matlab
   
   options = generateProjectOptions();
-  %% OR %%
+   %% OR %%
   options = generateProjectOptions(GitRepositoryUrl);
   
 ```
@@ -68,6 +68,19 @@ MATLAB Toolbox Template helps users generate their own MATLAB&reg; Toolboxes rep
               licenseType: ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
 
 ```
+* Update the parameters based on the users requirements and update the local folder path where user wants to create the project.
+
+```matlab
+   >> options.templateFields.rootFolderName = 'DemoToolbox'
+   >> options.templateFields.projectDescription = 'A demo toolbox to demonstrate how user can get started in developing a new MATLAB toolbox'
+   >> options.templateFields.outputPath = 'Path_where_project_is_created'
+```
+* In last step pass the options object to generateProject function.
+
+```matlab
+   >> generateProject(options)
+```
+* It will perform a system check to confirm installation of cookiecutter python package and finally create the project template 
 
  ## License 
 
