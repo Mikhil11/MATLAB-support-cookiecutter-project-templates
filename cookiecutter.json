@@ -1,10 +1,10 @@
 {
-  "userFullName": "UserFullName",
-  "userEmail": "UserEmailID",
-  "githubUserName": "GitUserName",
-  "rootFolderName": "DemoToolbox",
-  "repositoryName": "Demo Toolbox for Math operations",
-  "projectDescription": "This project helps open source community in getting started with toolbox development activity using MATLAB environment",
-  "toolboxVersion": "0.0.1",
-  "licenseType": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
+  "UserFullName": "Enter full name of the user",
+  "UserEmail": "Enter user email ID",
+  "GithubUsername": "Enter github user ID",
+  "RootFolderName": "DemoToolbox",
+  "RepositoryName": "Demo Toolbox for Math operations",
+  "ProjectDescription": "This project helps open source community in getting started with toolbox development activity using MATLAB environment",
+  "ToolboxVersion": "0.0.1",
+  "LicenseType": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "other"]
 }
