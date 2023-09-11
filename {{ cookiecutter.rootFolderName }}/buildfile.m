@@ -28,13 +28,13 @@ end
         opts = matlab.addons.toolbox.ToolboxOptions("toolboxPackaging.prj");
 
         %update toolbox name
-        opts.ToolboxName = "{{ cookiecutter.rootFolderName }}";
+        opts.ToolboxName = "{{ cookiecutter.RootFolderName }}";
 
         %update Toolbox description
-        opts.Description = "{{ cookiecutter.projectDescription }}";
+        opts.Description = "{{ cookiecutter.ProjectDescription }}";
 
         %update Toolbox version
-        opts.ToolboxVersion = "{{ cookiecutter.toolboxVersion }}";
+        opts.ToolboxVersion = "{{ cookiecutter.ToolboxVersion }}";
 
         % By default, the packaging GUI restricts the name of the getting started guide, so we fix that here.
         opts.ToolboxGettingStartedGuide = fullfile("toolbox", "gettingStarted.mlx");

@@ -1,4 +1,4 @@
-# {{ cookiecutter.repositoryName }} 
+# {{ cookiecutter.RepositoryName }} 
 
 <!-- This is the "Title of the contribution" that was approved during the Community Contribution Review Process -->  
 
@@ -10,7 +10,7 @@
 <!-- Add this icon to the README if this repo also appears on File Exchange via the "Connect to GitHub" feature -->  
 
  
-{{ cookiecutter.projectDescription }}
+{{ cookiecutter.ProjectDescription }}
 
 <!--- If your project includes a visualation or any images or an App please include a screenshot in this README ---> 
 
@@ -108,12 +108,12 @@ Please see the [documentation](Documentation/Installation.md) for detailed insta
 2. Step 2 
 
 
-## Getting started with {{ cookiecutter.rootFolderName }} Toolbox
+## Getting started with {{ cookiecutter.RootFolderName }} Toolbox
 
 ## How to use the toolbox functions:
 
 ```matlab:Code
-%% Provide descriotion about the toolbox function and provide an example for it
+%% Provide description about the toolbox function and provide an example for it
 x = 2;
 y = 3;
 a =  addVariable(x,y);
