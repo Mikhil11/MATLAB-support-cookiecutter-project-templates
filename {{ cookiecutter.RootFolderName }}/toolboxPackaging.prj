@@ -3,7 +3,7 @@
     <param.appname>{{ cookiecutter.RootFolderName }}</param.appname>
     <param.guid>{{ uuid4() }}</param.guid>
     <param.version>0.0</param.version>
-    <param.output>${PROJECT_ROOT}/release/{{cookiecutter.RootFolderName }}.mltbx</param.output>
+    <param.output>${PROJECT_ROOT}/release/{{ cookiecutter.RootFolderName }}.mltbx</param.output>
     <fileset.rootdir>
       <file>${PROJECT_ROOT}/toolbox</file>
     </fileset.rootdir>
