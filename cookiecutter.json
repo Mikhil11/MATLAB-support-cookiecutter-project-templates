@@ -3,8 +3,8 @@
   "userEmail": "UserEmailID",
   "githubUserName": "GitUserName",
   "rootFolderName": "DemoToolbox",
-  "repositoryName": "Demo Toolbox for Math Operations",
-  "projectDescription": "This project helps open source community to develop their own toolboxes using MATLAB environment",
+  "repositoryName": "Demo Toolbox for Math operations",
+  "projectDescription": "This project helps open source community in getting started with toolbox development activity using MATLAB environment",
   "toolboxVersion": "0.0.1",
-  "licenseType": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "other"]
+  "licenseType": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
 }
