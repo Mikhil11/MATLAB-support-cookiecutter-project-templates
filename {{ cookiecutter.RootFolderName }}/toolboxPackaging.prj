@@ -1,15 +1,15 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
   <configuration target="target.toolbox" target-name="Package Toolbox">
-    <param.appname>DemoToolbox</param.appname>
-    <param.authnamewatermark>Mikhil Shetty</param.authnamewatermark>
-    <param.email>shetty.mik@gmail.com</param.email>
+    <param.appname>{{ cookiecutter.RepositoryName }}</param.appname>
+    <param.authnamewatermark>{{ cookiecutter.UserFullName }}</param.authnamewatermark>
+    <param.email>{{ cookiecutter.UserEmail }}</param.email>
     <param.company />
     <param.summary />
-    <param.description>This is demo lets see</param.description>
+    <param.description>{{ cookiecutter.UserEmail }}</param.description>
     <param.screenshot />
-    <param.guid>5f67bfe9-58c3-4a65-b95d-d5202699fbc3</param.guid>
-    <param.version>0.0</param.version>
-    <param.output>${PROJECT_ROOT}/release/DemoToolbox.mltbx</param.output>
+    <param.guid>{{ uuid4() }}</param.guid>
+    <param.version>{{ cookiecutter.ToolboxVersion }}</param.version>
+    <param.output>${PROJECT_ROOT}/release/{{cookiecutter.RootFolderName }}.mltbx</param.output>
     <fileset.rootdir>
       <file>${PROJECT_ROOT}/toolbox</file>
     </fileset.rootdir>
