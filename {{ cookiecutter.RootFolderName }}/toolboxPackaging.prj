@@ -5,7 +5,7 @@
     <param.email>{{ cookiecutter.UserEmail }}</param.email>
     <param.company />
     <param.summary />
-    <param.description>{{ cookiecutter.UserEmail }}</param.description>
+    <param.description>{{ cookiecutter.ProjectDescription }}</param.description>
     <param.screenshot />
     <param.guid>{{ uuid4() }}</param.guid>
     <param.version>{{ cookiecutter.ToolboxVersion }}</param.version>
