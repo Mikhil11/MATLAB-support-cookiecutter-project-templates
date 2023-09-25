@@ -81,7 +81,7 @@ x = 0:pi/100:2*pi;
 y = sin(x);
 plot(x,y)
 ```
-<img src="images/plot.png" alt="Plot Image" width="300" height="200">
+<img src="images/plot.png" alt="Plot Image" width="600" height="400">
 
 ## License 
 
