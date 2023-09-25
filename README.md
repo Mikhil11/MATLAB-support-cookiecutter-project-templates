@@ -1,8 +1,12 @@
 # MATLAB Support for Cookiecutter project templates
 
 [![View <File Exchange Title> on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/####-file-exchange-title) 
+ 
+The MATLAB Project Template tool is a good resource for anyone starting their own MATLAB® Toolbox development. It provides a convenient command line utility called [Cookiecutter][1] that helps you quickly set up your project. Forget about the hassle of creating the folder structure and necessary files from scratch – this tool generates them for you!
 
-MATLAB Project Template tool helps users getting started with their own MATLAB&reg; Toolbox development using a command line utility tool called [Cookiecutter][1]. The template folder structure and files which are generated as a part of this tool is provided within the directory '{{cookiecutter.rootFolderName}}'. This project template is based on MathWorks recommended [toolbox design](https://github.com/mathworks/toolboxdesign)
+Inside the '{{cookiecutter.RootFolderName}}' directory, you'll find the complete project template. It follows MathWorks' recommended [toolbox design](https://github.com/mathworks/toolboxdesign), so you can rest assured that you're building your toolbox using best practices.
+
+Why waste time reinventing the wheel? With the MATLAB Project Template tool, you'll save valuable time and effort, allowing you to focus on what really matters – developing your MATLAB Toolbox. Give it a try and experience the ease and efficiency it brings to your toolbox development process.
 
 
 ## Setup  
@@ -35,7 +39,7 @@ MATLAB Project Template tool helps users getting started with their own MATLAB&r
 
 ```matlab
   
-   >> options = generateProjectOptions();
+   >> options = generateProject();
   
 ```
 2. The options object defines the interface which helps user to modify a given project template.
@@ -43,38 +47,45 @@ MATLAB Project Template tool helps users getting started with their own MATLAB&r
 ```matlab
    >> options = 
      
-       generateProjectOptions with properties:
-     
-             outputPath: 'projectFolderPath'
-         templateFields: [1×1 struct]
-               addTests: 0
-               repoPath: "https://github.com/mathworks/MATLAB-support-cookiecutter-project-templates"
-               isFolder: 0
+       projectOptions with properties:
+
+            OutputPath: "C:\Users\mikhils\OneDrive - MathWorks\Desktop\outputPath"
+              AddTests: 0
+         IsUserDefined: 0
+        RepositoryPath: "https://github.com/Mikhil11/MATLAB-support-cookiecutter-project-templates"
+              IsFolder: 0
+          UserFullName: "Enter full name of the user"
+             UserEmail: "Enter user email ID"
+           LicenseType: [6×1 string]
+        ToolboxVersion: "0.0.1"
+    ProjectDescription: "This project helps open source community in getting started with toolbox development activity using MATLAB environment"
+        RepositoryName: "Demo Toolbox for Math operations"
+        RootFolderName: "DemoToolbox"
+        GithubUsername: "Enter github user ID"
+
 ```
 
-3. The parameters required to define a project is declared in the fieldname 'templateFields' of options object.
+3. The parameters required to define a project is declared in the options object.
 
 ```matlab
-   >> options.templateFields
+   >> options.LicenseType
    
-     struct with fields:
-   
-             userFullName: 'UserFullName'
-                userEmail: 'UserEmailID'
-           githubUserName: 'GitUserName'
-           rootFolderName: 'MATLABTemplate'
-           repositoryName: 'MATLABTemplate'
-       projectDescription: 'This project helps open source community in getting started with toolbox development activity using MATLAB environment'
-           toolboxVersion: '0.0.1'
-              licenseType: ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
+     6×1 string array
+
+    "MIT license"
+    "BSD license"
+    "ISC license"
+    "Apache Software license 2.0"
+    "GNU General Public license v3"
+    "other"
 
 ```
 4. Update the parameters based on the users requirements and update the local folder path where user wants to create the project.The default output path is the location at which the generateProjectOptions function is executed.
 
 ```matlab
-   >> options.templateFields.rootFolderName = 'DemoToolbox'
-   >> options.templateFields.projectDescription = 'A demo toolbox to demonstrate how user can get started in developing a new MATLAB toolbox'
-   >> options.templateFields.outputPath = 'Path_where_project_is_created'
+   >> options.RootFolderName = 'ExampleToolbox'
+   >> options.ProjectDescription = 'An Example toolbox to demonstrate how user can get started in toolbox development activities'
+   >> options.OutputPath = 'Path_where_project_is_created'
 ```
 5. In last step pass the options object to generateProject function.
 
@@ -84,19 +95,20 @@ MATLAB Project Template tool helps users getting started with their own MATLAB&r
 6. It will perform a system check to confirm installation of cookiecutter python package and finally create the project template
  
 * The user can create its own [cookiecutter template](https://cookiecutter.readthedocs.io/en/1.7.2/first_steps.html) in a new Github repository.
-* Pass the Github repository WebUrl as an argument to generateProjectOptions function.
+* Pass the Github repository WebUrl as an argument to generateProjectOptions function. The Web URL should end with '.git'.
 ```matlab
   
-   >> options = generateProjectOptions(GitRepositoryWebUrl);
+   >> options = generateProject(GitRepositoryWebUrl);
   
 ```
-* Follow steps from 2 to 5 as mentioned above to create the project using the newly defined cookiecutter template
+* Follow steps from 2 to 5 as mentioned above to create the project using any other cookiecutter template. The custom fields are defined 
+  inside the variable options.TemplateFields for any other templates
 
  ## License 
 
 <!--- Make sure you have a License.txt within your Repo ---> 
 
-The license is available in the [LICENSE.md][3] file within this repository
+The license is available in the [license.txt][3] file within this repository
 
  
 ## Community Support 
@@ -110,7 +122,7 @@ Copyright 2023 The MathWorks, Inc.
 
 [2]: https://in.mathworks.com/help/install/install-products.html 
 
-[3]: https://github.com/mathworks/MATLAB-Support-for-Cookiecutter-Project-Templates/-/blob/main/LICENSE 
+[3]: https://github.com/mathworks/MATLAB-Support-for-Cookiecutter-Project-Templates/-/blob/main/license.txt 
 
 [4]: https://in.mathworks.com/help/matlab/ref/matlab.addons.install.html 
 
