@@ -9,7 +9,7 @@
     <param.screenshot />
     <param.guid>{{ uuid4() }}</param.guid>
     <param.version>{{ cookiecutter.ToolboxVersion }}</param.version>
-    <param.output>${PROJECT_ROOT}/release/{{cookiecutter.RootFolderName }}.mltbx</param.output>
+    <param.output>${PROJECT_ROOT}/release/{{ cookiecutter.RootFolderName }}.mltbx</param.output>
     <fileset.rootdir>
       <file>${PROJECT_ROOT}/toolbox</file>
     </fileset.rootdir>
