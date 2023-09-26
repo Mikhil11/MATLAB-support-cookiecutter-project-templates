@@ -10,7 +10,7 @@ This folder contains various MATLAB reports that you can generate using the prov
 
 ## Use buildtool to create all your reports
 
-The user can add the custom functions in the [buildfile](./buildfile.m) provided within the toolbox template
+The user can add the custom functions in the [buildfile](../buildfile.m) provided within the toolbox template
 
 Open MATLAB and navigate to the root directory of your MATLAB toolbox.
 
