@@ -140,13 +140,13 @@ end
         opts = matlab.addons.toolbox.ToolboxOptions("toolboxPackaging.prj");
         
         % Update toolbox name
-        opts.ToolboxName = "{{ cookiecutter.RepositoryName }}";
+        opts.ToolboxName = "Demo Toolbox for Math operations";
         
         % Update toolbox description
-        opts.Description = "{{ cookiecutter.ProjectDescription }}";
+        opts.Description = "This project helps open source community in getting started with toolbox development activity using MATLAB environment";
         
         % Update toolbox version
-        opts.ToolboxVersion = "{{ cookiecutter.ToolboxVersion }}";
+        opts.ToolboxVersion = "0.0.1";
         
         % By default, the packaging GUI restricts the name of the getting started
         % guide, so we fix that here.
