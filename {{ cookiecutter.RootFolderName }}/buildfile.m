@@ -68,11 +68,13 @@ end
         %
         %   This will execute the check task and identify code issues.
         
-        issues = codeIssues;
+        issues = codeIssues("toolbox",IncludeSubfolders=true);
         issueTable = issues.Issues;
-        assert(~contains(string(issueTable.Severity),"error"),formattedDisplayText(issues.Issues(:,["Location" "Severity" "Description"])))
-        if contains(string(issueTable.Severity),"warning")
-            disp(formattedDisplayText(issues.Issues(:,["Location" "Severity" "Description"])));
+        if ~isempty(issueTable)
+            assert(~contains(string(issueTable.Severity),"error"),formattedDisplayText(issues.Issues(:,["Location" "Severity" "Description"])))
+            if contains(string(issueTable.Severity),"warning")
+                disp(formattedDisplayText(issues.Issues(:,["Location" "Severity" "Description"])));
+            end
         end
     end
 
