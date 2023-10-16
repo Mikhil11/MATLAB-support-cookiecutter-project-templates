@@ -5,33 +5,45 @@
 %
 % Commands:
 %   test <tests>                  Run unit tests with optional arguments
-%                                 - tests: Path to the tests folder (default: context.Plan.RootFolder)
+%                                 - tests: Path to the tests folder (default: "tests")
 %
+%   check                         Identify code issues
+%
+%   release                       Create a release and package the toolbox
 %
 % Examples:
-%   buildtool test("tests")       Run unit tests in the 'tests' folder with default options
-%   buildtool test("tests",createTestReport = true)
-%                                 Run unit tests in the 'tests' folder and
-%                                 generates report
+%   buildtool test("tests")       Run unit tests in the 'tests' folder
+%   buildtool check               Identify code issues
+%   buildtool release             Create a release and package the toolbox
 %
 % For more information, please refer to the buildtool <a href="https://in.mathworks.com/help/matlab/matlab_prog/overview-of-matlab-build-tool.html">documentation</a> for the build plan and task definitions.
 
 function plan = buildfile
     % BUILDFILE - Create a build plan for tasks
-
-    %   PLAN = BUILDPLAN - This function creates a plan using the buildplan
-    %   function and sets the default task and dependencies for the plan.
-    %   The plan is returned as an output.
     %
+    %   The buildfile script is used to define a build plan for your project. It contains task functions that define the actions
+    %   to be performed during the build process. Each task represents a specific unit of work, such as running tests or
+    %   identifying code issues.
     %
-    %   Execution:
-    %   To execute the buildfile, open the command line and navigate to the
-    %   directory containing the buildfile.m file. Then run the following
-    %   command:
+    %   Usage:
+    %       To execute the buildfile, open the command line and navigate to the directory containing the buildfile.m file. Then
+    %       run the following command:
     %
-    %   >> buildtool
+    %           buildtool
     %
-    %   This will execute the buildfile and perform all the tasks.
+    %       This will execute the buildfile and perform all the tasks defined in the build plan.
+    %
+    %   Tasks:
+    %       - check: Identify code issues
+    %       - test: Run unit tests
+    %       - release: Create a release and package the toolbox
+    %
+    %   Example:
+    %       buildtool test("tests")
+    %       buildtool check
+    %       buildtool release
+    %
+    %   See also: buildtool
     
     plan = buildplan(localfunctions);
     
@@ -45,20 +57,16 @@ end
     function checkTask(~)
         % CHECKTASK - Identify code issues
         %
-        %   CHECKTASK - This function identifies code issues using the codeIssues
-        %   function. If any issues are found, an assertion error is raised with
-        %   the formatted display text of the issues.
-        %
+        %   This task identifies code issues using the codeIssues function. If any issues are found, an assertion error is raised
+        %   with the formatted display text of the issues. If there are warnings, they are displayed on the console.
         %
         %   Execution:
-        %   This task is automatically executed as part of the build process when
-        %   running the buildfile. It can be executed separately from the
-        %   command line
+        %   To execute only the check task, open the command line and navigate to the directory containing the buildfile.m file.
+        %   Then run the following command:
         %
-        %   >> buildtool check
+        %       buildtool check
         %
-        %   This will execute only check task of the buildfile
-
+        %   This will execute the check task and identify code issues.
         
         issues = codeIssues;
         issueTable = issues.Issues;
@@ -68,23 +76,18 @@ end
         end
     end
 
-    function testTask(~,testFolder,options)
-            % TESTTASK - Run unit tests and generate reports
+    function testTask(~,testFolder)
+            % TESTTASK - Run unit tests
             %
             %   TESTTASK - This function runs unit tests using the runtests function
-            %   with specified options. If any test failures occur, an assertion
-            %   error is raised.
+            %   for a specified test folder
             %
             %   Syntax:
-            %   testTask(~, testFolder, options)
+            %   testTask(~, testFolder)
             %
             %   Inputs:
             %   - ~: Unused placeholder for the context object
             %   - testFolder: The folder containing the unit tests (default: "tests")
-            %   - options: Additional options for running the tests
-            %       - IncludeSubfolders: Logical flag indicating whether to include subfolders (default: true)
-            %       - OutputDetail: Level of detail for test output (default: "terse")
-            %       - createTestReport: Logical flag indicating whether to create a test report (default: false)
             %
             %   Execution:
             %   To execute the testTask separately, open the command line and navigate to
@@ -94,26 +97,19 @@ end
             %       buildtool test
             %
             %   This will execute the testTask and run the unit tests
-            %   Note: user can use different options availablein this task
-            %   Eg: buildtool test("tests",createTestReport = true)
+            %   Eg: buildtool test("tests")
             %
-            %   This executes all the tests within the 'test' folder and
-            %   create report inside 'reports' directory
+            %   This executes all the tests within the 'test' folder
+
         arguments
             ~
             testFolder string = "tests"
-            options.IncludeSubfolders logical = true
-            options.OutputDetail string = "terse"
-            options.createTestReport logical = false
         end
         
         %Run unit tests
         addpath(genpath('toolbox'))
-        results = runtests(testFolder,IncludeSubfolders=options.IncludeSubfolders,OutputDetail=options.OutputDetail);
+        results = runtests(testFolder);
         assertSuccess(results);
-        if options.createTestReport
-            generateHTMLReport(results,'reports');
-        end
     end
 
     function releaseTask(~)
@@ -140,16 +136,15 @@ end
         opts = matlab.addons.toolbox.ToolboxOptions("toolboxPackaging.prj");
         
         % Update toolbox name
-        opts.ToolboxName = "Demo Toolbox for Math operations";
+        opts.ToolboxName = "{{ cookiecutter.RepositoryName }}";
         
         % Update toolbox description
-        opts.Description = "This project helps open source community in getting started with toolbox development activity using MATLAB environment";
+        opts.Description = "{{ cookiecutter.ProjectDescription }}";
         
         % Update toolbox version
-        opts.ToolboxVersion = "0.0.1";
+        opts.ToolboxVersion = "{{ cookiecutter.ToolboxVersion }}";
         
-        % By default, the packaging GUI restricts the name of the getting started
-        % guide, so we fix that here.
+        % Include gettingStarted guide in the packaging process
         opts.ToolboxGettingStartedGuide = fullfile("toolbox", "gettingStarted.mlx");
         
         % GitHub releases don't allow spaces, so replace spaces with underscores
@@ -172,4 +167,4 @@ end
         matlab.addons.toolbox.packageToolbox(opts);
     end
     % Note : The user can add custom functions which can be part of build
-    % process. Just add suffix 'Task' to the function name
+    % process. Add suffix 'Task' to the custom function name
