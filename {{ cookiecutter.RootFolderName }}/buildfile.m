@@ -71,7 +71,7 @@ end
         issues = codeIssues("toolbox",IncludeSubfolders=true);
         issueTable = issues.Issues;
         if ~isempty(issueTable)
-            assert(~contains(string(issueTable.Severity),"error"),formattedDisplayText(issues.Issues(:,["Location" "Severity" "Description"])))
+            assert(~any(contains(string(issueTable.Severity),"error")),formattedDisplayText(issues.Issues(:,["Location" "Severity" "Description"])))
             if contains(string(issueTable.Severity),"warning")
                 disp(formattedDisplayText(issues.Issues(:,["Location" "Severity" "Description"])));
             end
