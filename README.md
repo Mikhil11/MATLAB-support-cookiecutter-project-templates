@@ -108,7 +108,7 @@ Why waste time reinventing the wheel? With the MATLAB Project Template tool, you
 
 <!--- Make sure you have a License.txt within your Repo ---> 
 
-The license is available in the [license.txt][3] file within this repository
+The license is available in the [LICENSE.txt][3] file within this repository
 
  
 ## Community Support 
@@ -122,7 +122,7 @@ Copyright 2023 The MathWorks, Inc.
 
 [2]: https://in.mathworks.com/help/install/install-products.html 
 
-[3]: https://github.com/mathworks/MATLAB-Support-for-Cookiecutter-Project-Templates/-/blob/main/license.txt 
+[3]: https://github.com/mathworks/MATLAB-Support-for-Cookiecutter-Project-Templates/-/blob/main/LICENSE.txt 
 
 [4]: https://in.mathworks.com/help/matlab/ref/matlab.addons.install.html 
 
