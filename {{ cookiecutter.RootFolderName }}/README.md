@@ -37,9 +37,7 @@ Requires MATLAB release R#### or newer
 - [Product1](https://url-to-product1)  
  
 
-### 3rd Party Products: 
-
-3p: 
+### External Dependencies: 
 
 - [Product1](https://url-to-product1) 
 
