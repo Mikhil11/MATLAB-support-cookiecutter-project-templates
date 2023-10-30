@@ -17,10 +17,6 @@ Thank you for considering contributing to our project {{ cookiecutter.Repository
 - Provide a clear and concise description of the changes made.
 - Reference any related issues using the `#issue-number` syntax.
 
-## Code of Conduct
-
-Please note that we have a Code of Conduct in place to ensure a respectful and inclusive environment. By participating in this project, you are expected to adhere to the Code of Conduct.
-
 ## License
 
 By contributing to this repository, you agree that your contributions will be licensed under the [project's license](LICENSE).
