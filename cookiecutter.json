@@ -1,7 +1,6 @@
 {
   "UserFullName": "Enter full name of the user",
   "UserEmail": "Enter user email ID",
-  "GithubUsername": "Enter github user ID",
   "RootFolderName": "DemoToolbox",
   "RepositoryName": "Demo Toolbox for Math operations",
   "ProjectDescription": "This project helps open source community in getting started with toolbox development activity using MATLAB environment",
