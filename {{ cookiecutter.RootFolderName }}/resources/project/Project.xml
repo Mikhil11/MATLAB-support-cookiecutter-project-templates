@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata MetadataType="monolithic">
+  <Info Location="ProjectData">
+    <Info Name="{{ cookiecutter.RootFolderName }}"/>
+  </Info>
+  <Categories Location="Root">
+    <Category Location="FileClassCategory">
+      <Info DataType="None" Name="Classification" ReadOnly="1" SingleValued="1"/>
+      <Label Location="design">
+        <Info Name="Design" ReadOnly="INHERITED"/>
+      </Label>
+      <Label Location="derived">
+        <Info Name="Derived" ReadOnly="INHERITED"/>
+      </Label>
+      <Label Location="artifact">
+        <Info Name="Artifact" ReadOnly="INHERITED"/>
+      </Label>
+      <Label Location="convenience">
+        <Info Name="Convenience" ReadOnly="INHERITED"/>
+      </Label>
+      <Label Location="other">
+        <Info Name="Other" ReadOnly="INHERITED"/>
+      </Label>
+      <Label Location="test">
+        <Info Name="Test" ReadOnly="INHERITED"/>
+      </Label>
+      <Label Location="none">
+        <Info Name="None" ReadOnly="INHERITED"/>
+      </Label>
+    </Category>
+  </Categories>
+  <Files Location="Root">
+    <File Location="CONTRIBUTING.md">
+      <Info/>
+    </File>
+    <File Location="LICENSE.txt">
+      <Info/>
+    </File>
+    <File Location="README.md">
+      <Info/>
+    </File>
+    <File Location="buildfile.m">
+      <Info>
+        <Category UUID="FileClassCategory">
+          <Label UUID="design"/>
+        </Category>
+      </Info>
+    </File>
+    <File Location="images">
+      <Info/>
+      <DIR_SIGNIFIER Location="1">
+        <Info/>
+      </DIR_SIGNIFIER>
+      <File Location="plot.png">
+        <Info/>
+      </File>
+      <File Location="toolboxPackaging.jpg">
+        <Info/>
+      </File>
+    </File>
+    <File Location="reports">
+      <Info/>
+      <DIR_SIGNIFIER Location="1">
+        <Info/>
+      </DIR_SIGNIFIER>
+      <File Location="Readme.md">
+        <Info/>
+      </File>
+    </File>
+    <File Location="tests">
+      <Info/>
+      <DIR_SIGNIFIER Location="1">
+        <Info/>
+      </DIR_SIGNIFIER>
+      <File Location="testMathFunctions.m">
+        <Info>
+          <Category UUID="FileClassCategory">
+            <Label UUID="design"/>
+          </Category>
+        </Info>
+      </File>
+    </File>
+    <File Location="toolbox">
+      <Info/>
+      <DIR_SIGNIFIER Location="1">
+        <Info/>
+      </DIR_SIGNIFIER>
+      <File Location="addVariable.m">
+        <Info>
+          <Category UUID="FileClassCategory">
+            <Label UUID="design"/>
+          </Category>
+        </Info>
+      </File>
+      <File Location="examples">
+        <Info/>
+        <DIR_SIGNIFIER Location="1">
+          <Info/>
+        </DIR_SIGNIFIER>
+        <File Location="addVariableExample.m">
+          <Info>
+            <Category UUID="FileClassCategory">
+              <Label UUID="design"/>
+            </Category>
+          </Info>
+        </File>
+      </File>
+      <File Location="gettingStarted.mlx">
+        <Info>
+          <Category UUID="FileClassCategory">
+            <Label UUID="design"/>
+          </Category>
+        </Info>
+      </File>
+      <File Location="internal">
+        <Info/>
+        <DIR_SIGNIFIER Location="1">
+          <Info/>
+        </DIR_SIGNIFIER>
+        <File Location="verifyInputs.m">
+          <Info>
+            <Category UUID="FileClassCategory">
+              <Label UUID="design"/>
+            </Category>
+          </Info>
+        </File>
+      </File>
+      <File Location="subtractVariable.m">
+        <Info>
+          <Category UUID="FileClassCategory">
+            <Label UUID="design"/>
+          </Category>
+        </Info>
+      </File>
+    </File>
+    <File Location="toolboxPackaging.prj">
+      <Info/>
+    </File>
+  </Files>
+  <ProjectPath Location="Root">
+    <Reference Location="2ad042ef-40a6-4c0a-9989-0acc2f38bbbc">
+      <Info Ref="toolbox/examples" Type="Relative"/>
+    </Reference>
+    <Reference Location="4a00aabc-5647-4087-9385-eaf02276df52">
+      <Info Ref="toolbox/internal" Type="Relative"/>
+    </Reference>
+    <Reference Location="abc43396-f0ba-44f8-99db-259a8e8fdb5f">
+      <Info Ref="toolbox" Type="Relative"/>
+    </Reference>
+    <Reference Location="b455825f-6c3a-4b34-908c-9e7275e2d43d">
+      <Info Ref="" Type="Relative"/>
+    </Reference>
+    <Reference Location="be5de331-b3d8-4713-be00-104e4ce4c5db">
+      <Info Ref="tests" Type="Relative"/>
+    </Reference>
+  </ProjectPath>
+</metadata>
