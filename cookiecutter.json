@@ -5,5 +5,5 @@
   "RepositoryName": "Demo Toolbox for Math operations",
   "ProjectDescription": "This project helps open source community in getting started with toolbox development activity using MATLAB environment",
   "ToolboxVersion": "0.0.1",
-  "LicenseType": ['<a href="https://choosealicense.com/">choose your license</a>','MIT License', 'BSD License", "ISC License', 'Apache Software License 2.0', 'GNU General Public License v3']
+  "LicenseType": ['<a href="https://choosealicense.com/">choose your license</a>','MIT License', 'BSD License", 'ISC License', 'Apache Software License 2.0', 'GNU General Public License v3']
 }
