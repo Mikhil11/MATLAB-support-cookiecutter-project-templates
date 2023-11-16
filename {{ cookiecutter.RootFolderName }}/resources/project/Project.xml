@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata MetadataType="monolithic">
+  <Info Location="ProjectData">
+    <Info Name="{{ cookiecutter.RootFolderName }}"/>
+  </Info>
+  <Categories Location="Root">
+    <Category Location="FileClassCategory">
+      <Info DataType="None" Name="Classification" ReadOnly="1" SingleValued="1"/>
+      <Label Location="design">
+        <Info Name="Design" ReadOnly="INHERITED"/>
+      </Label>
+      <Label Location="derived">
+        <Info Name="Derived" ReadOnly="INHERITED"/>
+      </Label>
+      <Label Location="artifact">
+        <Info Name="Artifact" ReadOnly="INHERITED"/>
+      </Label>
+      <Label Location="convenience">
+        <Info Name="Convenience" ReadOnly="INHERITED"/>
+      </Label>
+      <Label Location="other">
+        <Info Name="Other" ReadOnly="INHERITED"/>
+      </Label>
+      <Label Location="test">
+        <Info Name="Test" ReadOnly="INHERITED"/>
+      </Label>
+      <Label Location="none">
+        <Info Name="None" ReadOnly="INHERITED"/>
+      </Label>
+    </Category>
+  </Categories>
+  <Files Location="Root">
+    <File Location="CONTRIBUTING.md">
+      <Info/>
+    </File>
+    <File Location="LICENSE.txt">
+      <Info/>
+    </File>
+    <File Location="README.md">
+      <Info/>
+    </File>
+    <File Location="buildfile.m">
+      <Info>
+        <Category UUID="FileClassCategory">
+          <Label UUID="design"/>
+        </Category>
+      </Info>
+    </File>
+    <File Location="images">
+      <Info/>
+      <DIR_SIGNIFIER Location="1">
+        <Info/>
+      </DIR_SIGNIFIER>
+      <File Location="plot.png">
+        <Info/>
+      </File>
+      <File Location="toolboxPackaging.jpg">
+        <Info/>
+      </File>
+    </File>
+    <File Location="reports">
+      <Info/>
+      <DIR_SIGNIFIER Location="1">
+        <Info/>
+      </DIR_SIGNIFIER>
+      <File Location="Readme.md">
+        <Info/>
+      </File>
+    </File>
+    <File Location="toolbox">
+      <Info/>
+      <DIR_SIGNIFIER Location="1">
+        <Info/>
+      </DIR_SIGNIFIER>
+      <File Location="addVariable.m">
+        <Info>
+          <Category UUID="FileClassCategory">
+            <Label UUID="design"/>
+          </Category>
+        </Info>
+      </File>
+      <File Location="examples">
+        <Info/>
+        <DIR_SIGNIFIER Location="1">
+          <Info/>
+        </DIR_SIGNIFIER>
+        <File Location="addVariableExample.m">
+          <Info>
+            <Category UUID="FileClassCategory">
+              <Label UUID="design"/>
+            </Category>
+          </Info>
+        </File>
+      </File>
+      <File Location="gettingStarted.mlx">
+        <Info>
+          <Category UUID="FileClassCategory">
+            <Label UUID="design"/>
+          </Category>
+        </Info>
+      </File>
+      <File Location="internal">
+        <Info/>
+        <DIR_SIGNIFIER Location="1">
+          <Info/>
+        </DIR_SIGNIFIER>
+        <File Location="verifyInputs.m">
+          <Info>
+            <Category UUID="FileClassCategory">
+              <Label UUID="design"/>
+            </Category>
+          </Info>
+        </File>
+      </File>
+      <File Location="subtractVariable.m">
+        <Info>
+          <Category UUID="FileClassCategory">
+            <Label UUID="design"/>
+          </Category>
+        </Info>
+      </File>
+    </File>
+    <File Location="toolboxPackaging.prj">
+      <Info/>
+    </File>
+  </Files>
+  <ProjectPath Location="Root">
+    <Reference Location="3f3db346-b1be-4387-b574-688012b47f04">
+      <Info Ref="toolbox/internal" Type="Relative"/>
+    </Reference>
+    <Reference Location="4ce2df59-9de0-4984-a48c-e4d3fa682cb2">
+      <Info Ref="" Type="Relative"/>
+    </Reference>
+    <Reference Location="5760fa56-750d-4c6f-9687-5ef1839b3cc5">
+      <Info Ref="toolbox" Type="Relative"/>
+    </Reference>
+    <Reference Location="d7ecede7-7d64-4e8a-88e3-24402de7a86c">
+      <Info Ref="toolbox/examples" Type="Relative"/>
+    </Reference>
+  </ProjectPath>
+  <Root Location="Extensions">
+    <Extension Location="Information">
+      <Info description="{{ cookiecutter.ProjectDescription }}"/>
+    </Extension>
+  </Root>
+</metadata>
